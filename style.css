@@ -11,7 +11,8 @@
 @media screen and (min-width:576px){
     #titulo{
         margin: 30px;
-        /*falta redondear las esquinas y centrar el texto verticalmente*/
+        margin-top: 15px;
+        border-radius: 10px;
     }
 }
 
