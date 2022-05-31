@@ -1,0 +1,46 @@
+#titulo {
+    text-align: center;
+    background-color: rgb(0, 128, 255);
+    color:azure;
+    height: 150px;
+    margin-bottom: 15px;
+    position: relative;
+    /*falta centrar el texto verticalmente*/
+}
+
+@media screen and (min-width:576px){
+    #titulo{
+        margin: 30px;
+        /*falta redondear las esquinas y centrar el texto verticalmente*/
+    }
+}
+
+/*quizá añadir una linea divisora entre el boton enviar y la lista 
+de nombres y gastos vertical en pantalla tipo PC y horizontal 
+en pantalla tipo celular con un margin de 30px*/
+
+.form-floating{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#boton-enviar{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+@media screen and (min-width:576px){
+    #card-list{
+        margin-top: 30px;
+    }
+}
+
+.card {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.card-header {
+    font-weight: bold;
+}
