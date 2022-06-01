@@ -21,8 +21,15 @@
             <label for="floatingInput">Nombre</label>
           </div>
           <div class="form-floating">
-            <input type="number" class="form-control" id="floatingPassword" placeholder="$0.00">
-            <label for="floatingPassword">Cantidad gastada</label>
+            <input type="number" min="1" class="form-control" id="floatingInputValue" placeholder="$0.00">
+            <label for="floatingInputValue">Cantidad gastada</label>
+            <script>
+              function check() {
+                if (document.getElementById("floatingInputValue").validity.rangeUnderflow){
+                  alert('Ingrese un monto válido')
+                }
+              }
+            </script>
           </div>
           <button type="button" class="btn btn-primary" id="boton-enviar">Enviar</button>
         </div>
